@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>如何查看GitHub Pages部署状态</title>
+    <link href="/2024/01/15/check-github-pages-deployment/"/>
+    <url>/2024/01/15/check-github-pages-deployment/</url>
+    
+    <content type="html"><![CDATA[<h2 id="查看GitHub-Pages部署状态"><a href="#查看GitHub-Pages部署状态" class="headerlink" title="查看GitHub Pages部署状态"></a>查看GitHub Pages部署状态</h2><p>要查看你的GitHub Pages网站的部署状态，请按照以下步骤操作：</p><ol><li><p>打开浏览器，访问你的GitHub仓库 <code>https://github.com/l880/l880.github.io</code></p></li><li><p>在仓库页面顶部的导航栏中，点击 “Settings”（设置）选项卡</p></li><li><p>在左侧菜单栏中，找到并点击 “Pages” 选项</p><ul><li>这个选项通常在左侧菜单的下方位置</li></ul></li><li><p>在GitHub Pages页面中，你可以看到：</p><ul><li>Source分支设置（应该设置为 <code>gh-pages</code> 分支）</li><li>部署状态信息</li><li>你的网站访问地址</li></ul></li><li><p>检查部署状态：</p><ul><li>如果显示 “Your site is published at <a href="https://l880.github.io",说明部署成功/">https://l880.github.io&quot;，说明部署成功</a></li><li>如果显示正在部署，等待几分钟后刷新页面</li><li>如果显示错误信息，根据提示进行相应的修复</li></ul></li></ol><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol><li><p>如果看不到部署状态：</p><ul><li>确保仓库是公开的（Public）</li><li>确保已经正确配置了 <code>gh-pages</code> 分支</li></ul></li><li><p>如果部署失败：</p><ul><li>检查 <code>_config.yml</code> 中的部署配置是否正确</li><li>确认 GitHub Actions 的权限设置是否正确</li></ul></li></ol><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul><li><a href="https://docs.github.com/cn/pages">GitHub Pages 官方文档</a></li><li><a href="https://hexo.io/zh-cn/docs/github-pages">Hexo 部署文档</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+      <tag>GitHub</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何管理和更新博客内容</title>
     <link href="/2024/01/02/blog-management/"/>
     <url>/2024/01/02/blog-management/</url>
