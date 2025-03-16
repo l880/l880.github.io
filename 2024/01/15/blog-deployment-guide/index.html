@@ -27,11 +27,11 @@
 <meta property="og:description" content="前言搭建个人博客是一个既有趣又富有挑战性的过程。本文将从一个新手的角度，详细记录使用Hexo框架搭建博客并部署到GitHub Pages的完整过程，以及在这个过程中可能遇到的问题和解决方案。 环境准备在开始搭建博客之前，需要安装以下必要的软件：  Node.js  访问 Node.js官网 下载并安装最新的LTS版本 安装完成后，打开命令行工具验证：12node -vnpm -v   Git  从">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-15T03:00:00.000Z">
-<meta property="article:modified_time" content="2025-03-16T11:14:42.719Z">
+<meta property="article:modified_time" content="2025-03-16T11:38:08.311Z">
 <meta property="article:author" content="Author">
-<meta property="article:tag" content="博客">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="GitHub">
+<meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -230,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          827 字
+          1.2k 字
         
       </span>
     
@@ -241,7 +241,7 @@
         
         
         
-          7 分钟
+          10 分钟
         
       </span>
     
@@ -409,10 +409,62 @@
 <li>在社区中寻求帮助</li>
 </ol>
 <p>通过这篇教程，相信你已经能够成功搭建并运营自己的个人博客。记住，遇到问题时保持耐心，善用搜索引擎和官方文档，这些都是提升技术能力的好机会。</p>
+<h2 id="博客使用指南"><a href="#博客使用指南" class="headerlink" title="博客使用指南"></a>博客使用指南</h2><h3 id="1-文章写作"><a href="#1-文章写作" class="headerlink" title="1. 文章写作"></a>1. 文章写作</h3><h4 id="Markdown语法基础"><a href="#Markdown语法基础" class="headerlink" title="Markdown语法基础"></a>Markdown语法基础</h4><ul>
+<li>标题：使用 <code>#</code> 表示标题级别，如 <code># 一级标题</code></li>
+<li>列表：使用 <code>-</code> 或 <code>1.</code> 创建无序或有序列表</li>
+<li>链接：<code>[链接文字](URL)</code></li>
+<li>图片：<code>![图片描述](图片URL)</code></li>
+<li>引用：使用 <code>&gt;</code> 创建引用块</li>
+<li>代码：使用 &#96;&#96;&#96; 包裹代码块，或用 &#96; 包裹行内代码</li>
+</ul>
+<h4 id="文章Front-matter配置"><a href="#文章Front-matter配置" class="headerlink" title="文章Front-matter配置"></a>文章Front-matter配置</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2024-01-15 10:00:00</span><br><span class="hljs-attr">categories:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">分类名</span><br><span class="hljs-attr">tags:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">标签1</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">标签2</span><br><span class="hljs-attr">top:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># 文章置顶</span><br><span class="hljs-attr">cover:</span> <span class="hljs-string">/images/cover.jpg</span>  <span class="hljs-comment"># 文章封面</span><br><span class="hljs-attr">comments:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># 开启评论</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="2-主题个性化"><a href="#2-主题个性化" class="headerlink" title="2. 主题个性化"></a>2. 主题个性化</h3><ol>
+<li><p><strong>修改主题颜色</strong><br>在 <code>_config.fluid.yml</code> 中配置：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">navbar:</span><br>  <span class="hljs-attr">color:</span> <span class="hljs-string">primary</span>  <span class="hljs-comment"># 导航栏颜色</span><br><br><span class="hljs-attr">color:</span><br>  <span class="hljs-attr">primary:</span> <span class="hljs-string">&#x27;#3eaf7c&#x27;</span>  <span class="hljs-comment"># 主题主色</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p><strong>自定义页面布局</strong></p>
+<ul>
+<li>修改首页文章列表样式</li>
+<li>配置侧边栏小部件</li>
+<li>设置页脚信息</li>
+</ul>
+</li>
+<li><p><strong>添加自定义CSS&#x2F;JS</strong><br>在主题配置文件中：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">custom_js:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">/js/custom.js</span><br><span class="hljs-attr">custom_css:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">/css/custom.css</span><br></code></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="3-评论系统配置"><a href="#3-评论系统配置" class="headerlink" title="3. 评论系统配置"></a>3. 评论系统配置</h3><ol>
+<li><p><strong>配置Gitalk</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">gitalk:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">clientID:</span> <span class="hljs-string">你的clientID</span><br>  <span class="hljs-attr">clientSecret:</span> <span class="hljs-string">你的clientSecret</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">你的仓库名</span><br>  <span class="hljs-attr">owner:</span> <span class="hljs-string">GitHub用户名</span><br>  <span class="hljs-attr">admin:</span> [<span class="hljs-string">管理员用户名</span>]<br></code></pre></td></tr></table></figure>
+</li>
+<li><p><strong>配置Valine</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">valine:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">appId:</span> <span class="hljs-string">你的appId</span><br>  <span class="hljs-attr">appKey:</span> <span class="hljs-string">你的appKey</span><br>  <span class="hljs-attr">placeholder:</span> <span class="hljs-string">说点什么...</span><br></code></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="4-博客维护"><a href="#4-博客维护" class="headerlink" title="4. 博客维护"></a>4. 博客维护</h3><ol>
+<li><p><strong>定期更新</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git pull  <span class="hljs-comment"># 拉取最新代码</span><br>npm update  <span class="hljs-comment"># 更新依赖</span><br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d  <span class="hljs-comment"># 重新生成并部署</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p><strong>文章备份</strong></p>
+<ul>
+<li>使用Git管理源文件</li>
+<li>定期导出文章Markdown文件</li>
+<li>备份主题配置</li>
+</ul>
+</li>
+<li><p><strong>性能优化</strong></p>
+<ul>
+<li>压缩图片资源</li>
+<li>开启文章懒加载</li>
+<li>使用CDN加速</li>
+</ul>
+</li>
+</ol>
 <h2 id="相关资源"><a href="#相关资源" class="headerlink" title="相关资源"></a>相关资源</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></li>
 <li><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">Fluid主题文档</a></li>
 <li><a target="_blank" rel="noopener" href="https://docs.github.com/cn/pages">GitHub Pages官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown语法教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">Gitalk配置文档</a></li>
 </ul>
 
                 
@@ -447,11 +499,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="print-no-link">#博客</a>
-      
         <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
       
         <a href="/tags/GitHub/" class="print-no-link">#GitHub</a>
+      
+        <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="print-no-link">#博客</a>
       
     </div>
   
