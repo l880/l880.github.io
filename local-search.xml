@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>如何管理和更新博客内容</title>
+    <link href="/2024/01/02/blog-management/"/>
+    <url>/2024/01/02/blog-management/</url>
+    
+    <content type="html"><![CDATA[<h2 id="博客内容管理指南"><a href="#博客内容管理指南" class="headerlink" title="博客内容管理指南"></a>博客内容管理指南</h2><p>本文将介绍如何管理和更新我们的Hexo博客内容。</p><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><ol><li><p>使用命令创建文章：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;文章标题&quot;</span><br></code></pre></td></tr></table></figure></li><li><p>或直接在 <code>source/_posts</code> 目录下创建 <code>.md</code> 文件</p></li></ol><h3 id="文章格式说明"><a href="#文章格式说明" class="headerlink" title="文章格式说明"></a>文章格式说明</h3><p>每篇文章都需要包含Front-matter信息：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-attr">date:</span> <span class="hljs-string">发布日期</span><br><span class="hljs-attr">tags:</span> [<span class="hljs-string">标签1</span>, <span class="hljs-string">标签2</span>]<br><span class="hljs-attr">categories:</span> [<span class="hljs-string">分类</span>]<br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure><h3 id="支持的内容格式"><a href="#支持的内容格式" class="headerlink" title="支持的内容格式"></a>支持的内容格式</h3><ol><li><p><strong>Markdown基本语法</strong></p><ul><li>标题：使用 <code>#</code> 号</li><li>列表：使用 <code>-</code> 或 <code>1.</code> </li><li>引用：使用 <code>&gt;</code> </li><li>代码：使用 &#96;&#96;&#96;</li></ul></li><li><p><strong>插入图片</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">图片描述</span>](<span class="hljs-link">/images/图片名称.jpg</span>)<br></code></pre></td></tr></table></figure></li><li><p><strong>链接引用</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接文字</span>](<span class="hljs-link">链接地址</span>)<br></code></pre></td></tr></table></figure></li></ol><h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><ol><li><p>启动本地服务器：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server<br></code></pre></td></tr></table></figure></li><li><p>访问 <code>http://localhost:5000</code> 预览</p></li></ol><h3 id="发布更新"><a href="#发布更新" class="headerlink" title="发布更新"></a>发布更新</h3><ol><li><p>生成静态文件：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate<br></code></pre></td></tr></table></figure></li><li><p>部署到服务器：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy<br></code></pre></td></tr></table></figure></li></ol><h3 id="维护建议"><a href="#维护建议" class="headerlink" title="维护建议"></a>维护建议</h3><ol><li>定期更新文章内容</li><li>及时回复读者评论</li><li>保持文章分类和标签的统一性</li><li>定期检查和更新友情链接</li></ol><h3 id="图片管理"><a href="#图片管理" class="headerlink" title="图片管理"></a>图片管理</h3><ol><li>将图片存放在 <code>source/images</code> 目录下</li><li>使用有意义的文件名</li><li>压缩图片以提高加载速度</li></ol><h3 id="主题定制"><a href="#主题定制" class="headerlink" title="主题定制"></a>主题定制</h3><ol><li>修改 <code>_config.yml</code> 进行基本设置</li><li>修改 <code>_config.fluid.yml</code> 配置主题</li></ol><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>好的博客管理需要持续的维护和更新。希望这篇文章能帮助你更好地管理博客内容！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术分享</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+      <tag>Hexo</tag>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>欢迎来到我的技术博客</title>
     <link href="/2024/01/01/welcome/"/>
     <url>/2024/01/01/welcome/</url>
